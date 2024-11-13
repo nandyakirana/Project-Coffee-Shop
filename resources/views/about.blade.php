@@ -6,7 +6,6 @@
     <title>About Us - CWD Coffee</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Background dan pengaturan umum */
         body, html {
             margin: 0;
             padding: 0;
@@ -21,7 +20,6 @@
             align-items: center;
         }
         
-        /* Header untuk logo dan navigasi */
         .header {
             width: 100%;
             padding: 15px 30px;
@@ -35,7 +33,6 @@
             width: 50px;
         }
 
-        /* Navigasi */
         .navbar {
             display: flex;
             gap: 20px;
@@ -48,11 +45,10 @@
         }
 
         .nav-link:hover {
-            color: #a0522d; /* Warna cokelat */
+            color: #a0522d; 
             text-decoration: underline;
         }
 
-        /* Container utama untuk konten */
         .content-container {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 40px;
@@ -62,15 +58,12 @@
             margin-top: 50px;
         }
 
-        /* Judul dan teks */
         h1, h2 {
             font-weight: bold;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header dengan Logo dan Navigasi -->
     <div class="header">
         <img src="{{ asset('images/logo.png') }}" alt="CWD Coffee" class="logo">
         <nav class="navbar">
@@ -80,8 +73,6 @@
             <a href="#" class="nav-link">Contact</a>
         </nav>
     </div>
-
-    <!-- Konten Utama -->
     <div class="content-container">
         <h1>Welcome to CWD Coffee</h1>
         <p>

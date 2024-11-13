@@ -15,7 +15,6 @@ Route::get('/enter-phone', function () {
 });
 
 Route::post('/register-phone', function () {
-    // Logic untuk submit nomor telepon
     return back()->with('message', 'Verification code has been sent!');
 })->name('register.phone.submit');
 
@@ -24,7 +23,6 @@ Route::get('/verify', function () {
 });
 
 Route::post('/verify-code', function () {
-    // Logic untuk verifikasi kode
     return back()->with('message', 'Verification successful!');
 })->name('verify.code.submit');
 
@@ -33,7 +31,6 @@ Route::get('/register', function () {
 });
 
 Route::post('/register-submit', function () {
-    // Logika untuk proses registrasi
     return back()->with('message', 'Registration successful!');
 })->name('register.submit');
 
@@ -42,7 +39,6 @@ Route::get('/login', function () {
 });
 
 Route::post('/login-submit', function () {
-    // Logika untuk proses login
     return back()->with('message', 'Login successful!');
 })->name('login.submit');
 

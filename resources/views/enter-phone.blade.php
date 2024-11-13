@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .register-background {
-            background-image: url('{{ asset('images/coffee-background2.jpg') }}'); /* Ganti dengan path yang sesuai */
+            background-image: url('{{ asset('images/coffee-background2.jpg') }}'); 
             background-size: cover;
             background-position: center;
             height: 100vh;

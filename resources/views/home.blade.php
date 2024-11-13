@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | CWD Coffee</title>
     <style>
-        /* CSS Langsung di sini */
-
-        /* Reset dasar */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Tampilan Navbar */
         nav {
             display: flex;
             justify-content: space-between;
@@ -56,9 +52,8 @@
             border-radius: 5px;
         }
 
-        /* Hero Section */
         .hero {
-            background-image: url('{{ asset('images/coffee-background.jpg') }}'); /* Sesuaikan path dengan gambar di public/img */
+            background-image: url('{{ asset('images/coffee-background.jpg') }}'); 
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -83,7 +78,6 @@
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav>
         <div class="logo">
             <img src="{{ asset('images/logo.png') }}" alt="CWD Coffee">
@@ -97,7 +91,6 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>Enjoy The Most Delicious Coffee</h1>
         <p>Start the day and lift your mood with coffee</p>
