@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - CWD Coffee</title>
+    <title>Registration - CWD Coffee</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .login-background {
+        .registration-background {
             background-image: url('{{ asset('images/coffee-background2.jpg') }}');
             background-size: cover;
             background-position: center;
@@ -22,7 +22,7 @@
             padding: 40px;
             border-radius: 8px;
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
         }
         .form-control {
             background: transparent;
@@ -32,23 +32,23 @@
         .form-control::placeholder {
             color: #cccccc;
         }
-        .login-btn {
+        .submit-btn {
             background-color: #a0522d;
             color: white;
             border: none;
             width: 100%;
         }
-        .login-btn:hover {
+        .submit-btn:hover {
             background-color: #8b4513;
         }
     </style>
 </head>
 <body>
 
-    <div class="login-background">
+    <div class="registration-background">
         <div class="form-container">
             <img src="{{ asset('images/logo.png') }}" alt="CWD Coffee" width="50" class="mb-3">
-            <h2>Login</h2>
+            <h2>Registration</h2>
             
             @if(session('message'))
                 <div class="alert alert-success">
@@ -56,15 +56,26 @@
                 </div>
             @endif
 
-            <form action="{{ route('login.submit') }}" method="POST">
+            <form action="{{ route('register.submit') }}" method="POST">
                 @csrf
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+                    </div>
+                </div>
                 <div class="mb-3">
-                    <input type="tel" class="form-control" name="phone_number" placeholder="Phone Number" required>
+                    <input type="number" class="form-control" name="age" placeholder="Age" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="address" placeholder="Address" required>
                 </div>
                 <div class="mb-3">
                     <input type="password" class="form-control" name="password" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn login-btn mt-3">Login</button>
+                <button type="submit" class="btn submit-btn mt-3">Submit</button>
             </form>
         </div>
     </div>

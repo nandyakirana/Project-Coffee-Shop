@@ -72,7 +72,6 @@
                     <input type="text" class="verification-input" name="code[]" maxlength="1" required>
                     <input type="text" class="verification-input" name="code[]" maxlength="1" required>
                     <input type="text" class="verification-input" name="code[]" maxlength="1" required>
-                    <input type="text" class="verification-input" name="code[]" maxlength="1" required>
                 </div>
                 <button type="submit" class="btn submit-btn mt-3">Verify</button>
             </form>
