@@ -10,6 +10,18 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/product', function () {
+    return view('product');
+})->name('product');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Route::get('/enter-phone', function () {
     return view('enter-phone');
 });
@@ -42,8 +54,6 @@ Route::post('/login-submit', function () {
     return back()->with('message', 'Login successful!');
 })->name('login.submit');
 
-Route::get('/about', function () {
-    return view('about');
-});
+
 
 
